@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Chivo:900i|Muli|Titillium+Web"
-      rel="stylesheet"
-    />
     <link type="text/css" rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <title>Fastest Presser Game</title>
+
+    <title>Fastest Presser</title>
   </head>
 
   <body>
     <div class="content"></div>
+    <div class="content">
+      <div class="game-container">
+        <h1>Fastest Presser</h1>
+        <input
+          id="seconds-input"
+          type="number"
+          placeholder="Set seconds"
+          min="1"
+        />
+        <h4 id="result"></h4>
+        <div id="buttons">
+          <button id="start-game-btn">Start game</button>
+          <button id="reset-game-btn">Reset game</button>
+        </div>
+
+        <div class="container">
+          <div class="players">
+            <h2>Press A</h2>
+            <p id="player-a-score"></p>
+          </div>
+          <div class="players">
+            <h2>Press L</h2>
+            <p id="player-l-score"></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 
   <script src="script.js"></script>

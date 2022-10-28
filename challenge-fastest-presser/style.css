@@ -1,3 +1,23 @@
 body {
-  background-color: white;
+  background-color: rgb(42, 135, 147);
+}
+
+.game-container h1 {
+  font-size: 1.5rem;
+  font-family: "Chivo";
+}
+
+.game-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.container {
+  display: flex;
+}
+
+.players {
+  padding: 40px;
 }
