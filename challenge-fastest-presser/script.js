@@ -21,14 +21,6 @@ startGameBtn.addEventListener("click", function (event) {
   runningGame = true;
   let gameTime = inputSeconds.value * 1000;
 
-  let countdownInterval = setInterval(function () {
-    gameTime -= 1000;
-
-    if (gameTime === 0) {
-      clearInterval(countdownInterval);
-    }
-  }, 1000);
-
   setTimeout(function () {
     runningGame = false;
 
